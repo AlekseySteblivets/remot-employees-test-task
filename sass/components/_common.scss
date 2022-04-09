@@ -1,0 +1,63 @@
+/* для  стилей  общего пользования */
+body {
+  //   font-family: 'Poppins';
+  //   font-style: normal;
+  font-size: 12px;
+  //   line-height: 1.5;
+  //   letter-spacing: 0.872727px;
+  //   color: $main-text-color;
+  //   min-width: 360px;
+}
+
+/* добавил этот стиль когда начал делать фест-мобайл подход*/
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  // outline: 2px solid red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* класс для всех ссылок <a>, убираем подчеркивание и задаем цвет */
+.link {
+  text-decoration: none;
+  color: inherit;
+  //   transition: color $time-transition;
+
+  //   &:focus,
+  //   &:hover {
+  //     color: $accent-cl;
+  //   }
+}
+
+.container {
+  margin: 0 auto;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: inherit;
+  outline: 1px solid tomato;
+}
+
+.header {
+  margin: 0 auto;
+  //   display: flex;
+  background-color: $accent-color;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* для  стилей  общего пользования */
+body {
+  font-size: 12px;
+}
+
+/* добавил этот стиль когда начал делать фест-мобайл подход*/
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* класс для всех ссылок <a>, убираем подчеркивание и задаем цвет */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: inherit;
+  outline: 1px solid tomato;
+}
+
+.header {
+  margin: 0 auto;
+  background-color: #67aefc;
+}
+/*# sourceMappingURL=main.css.map */
