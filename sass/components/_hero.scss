@@ -1,0 +1,41 @@
+.hero {
+  margin: 0 auto;
+  background-image: url('../../img/png/hero-mob.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  //   text-align: center;
+  //   width: 375px;
+  //   height: 547px;
+}
+
+// .hero-container-title {
+
+// }
+
+.hero .container {
+  padding-top: 337px;
+  //   margin-top: 337px;
+}
+
+.hero-container-title {
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 1.2;
+  /* or 32px */
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 22px;
+}
+
+.hero-container-text {
+  margin-top: 0px;
+  font-weight: 400;
+  line-height: 1.37;
+  /* or 22px */
+  margin-bottom: 34px;
+}
+
+.hero .button {
+  width: 100%;
+  margin-bottom: 51px;
+}
