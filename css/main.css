@@ -126,4 +126,10 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.mobile-button {
+  display: contents;
+  width: 49px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

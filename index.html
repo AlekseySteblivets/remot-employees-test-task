@@ -16,11 +16,12 @@
     <title>RemotEmployees</title>
   </head>
   <body>
+    <!---------------------------------------------------header  ------------------------------------------------------------>
     <header class="header">
       <div class="container">
         <nav class="navigation">
           <a href="" class="link logo">
-            <img src="./img/logo.svg" alt="" width="136px" />
+            <img src="./img/logo.svg" alt="логотип" width="136px" />
             <!-- <svg class="logo-svg" width="242px" , height="59px">
               <use href="./img/logo.svg"></use> -->
             <!-- <use href="./images/mobile/sprite.svg#icon-menu-burger"></use> -->
@@ -45,6 +46,40 @@
       </div>
     </header>
     <main>
+      <!------------------------------------- Меню для мобильного mobile-menu--------------------------------------------------------->
+      <!-- <div class="menu-icon">
+        <span></span>
+      </div> -->
+      <div class="mobile-menu" data-menu>
+          <ul class="list mobile-menu">
+            <li class="mobile-menu-item">
+              <a href="" class="link mobile-menu-link">Услуги</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="link mobile-menu-link">Портфолио</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="link mobile-menu-link">Этапы</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="link mobile-menu-link">Дизайнеры</a>
+            </li>
+          </ul>
+           <button class="mobile-button" type="button">
+                <svg class="menu-mobile-svg" width="13" height="13">
+                    <use class="icon-menu1" href="./img/sprite.svg#icon-circle-green" ></use>
+                    <!-- <use class="icon-menu2" href="./images/sprite.svg#icon-circle-green"></use> -->
+                </svg>
+                <svg class="menu-mobile-svg" width="13" height="13">
+                    <use class="icon-menu1" href="./img/sprite.svg#icon-circle-green" ></use>
+                </svg>
+                <svg class="menu-mobile-svg" width="13" height="13">
+                    <use class="icon-menu1" href="./img/sprite.svg#icon-circle-green" ></use>
+                </svg>
+           </button>
+        </div>
+      </div>
+
       <!----------------------------------- герой (hero) -------------------------------------------------------------------------->
       <section class="section hero">
         <div class="container">
@@ -192,7 +227,7 @@
         <div class="container">
           <div class="footer-social">
             <a href="./index.html" class="link logo">
-              <img class="footer-logo" src="./img/logo.svg" alt="" width="280px" />
+              <img class="footer-logo" src="./img/logo.svg" alt="логотип" width="280px" />
             </a>
             <ul class="list social-icons">
               <li class="social-icons-items">I</li>
