@@ -66,3 +66,61 @@
   width: 49px;
   cursor: pointer;
 }
+
+.mobile-menu {
+  background-color: $header-footer-color;
+  //   padding-top: 6px;
+  //   padding-bottom: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  //   height: 300px;
+  width: 376px;
+  margin: 0 auto;
+  border-top: 1px solid #ececec;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 55;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+// .mobile-menu-item {
+// }
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 43px;
+}
+
+.mobile-menu-nav {
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 49px;
+}
+
+.mobile-menu-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 2px;
+  //   background-color: red;
+}
+
+.mobile-menu-link {
+  position: relative;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 27px;
+  //   margin-bottom: 43px;
+  /* identical to box height, or 159% */
+
+  text-transform: uppercase;
+  color: $white-color;
+}

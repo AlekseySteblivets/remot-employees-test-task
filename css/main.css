@@ -132,4 +132,55 @@ img {
   width: 49px;
   cursor: pointer;
 }
+
+.mobile-menu {
+  background-color: #67aefc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 376px;
+  margin: 0 auto;
+  border-top: 1px solid #ececec;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 55;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 43px;
+}
+
+.mobile-menu-nav {
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 49px;
+}
+
+.mobile-menu-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 2px;
+}
+
+.mobile-menu-link {
+  position: relative;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 27px;
+  /* identical to box height, or 159% */
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
