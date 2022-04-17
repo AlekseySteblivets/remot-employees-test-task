@@ -68,7 +68,8 @@
 }
 
 .mobile-menu {
-  background-color: $header-footer-color;
+  // background-color: $header-footer-color;
+  background: rgba(103, 174, 252, 0.95);
   //   padding-top: 6px;
   //   padding-bottom: 6px;
   position: absolute;
@@ -103,14 +104,12 @@
 .mobile-menu-link-underline::after {
   content: '';
   position: absolute;
-  bottom: -8px;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   width: 100%;
-  border: 2px solid red;
-  border-radius: 2px;
-  //   background-color: red;
+  border: 2px solid $white-color;
 }
 
 .mobile-menu-link {

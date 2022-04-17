@@ -68,13 +68,13 @@
               <a href="" class="link mobile-menu-link mobile-menu-link-underline">Услуги</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="link mobile-menu-link">Портфолио</a>
+              <a href="#services" class="link mobile-menu-link">Портфолио</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="link mobile-menu-link">Этапы</a>
+              <a href="#stages" class="link mobile-menu-link">Этапы</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="link mobile-menu-link">Дизайнеры</a>
+              <a href="#examples" class="link mobile-menu-link">Дизайнеры</a>
             </li>
           </ul>
 
@@ -94,24 +94,73 @@
       </section>
 
       <!----------------------------------Услуги (services) дизайна по созданию интернет магазина ----------------------------------------------->
-      <section class="section">
-        <div class="container">
+      <section class="section bg-section">
+        <div id="services" class="container">
           <h2 class="services-section-title">
             Что входит в услугу по созданию дизайна интернет-магазина?
           </h2>
-          <ul class="list services">
-            <li class="services-item">Дизайн портала</li>
-            <li class="services-item">Дизайн адаптивной мобильной версии</li>
-            <li class="services-item">Дизайн десктопной версии</li>
-            <li class="services-item">Пользовательский интерфейс</li>
-            <li class="services-item">Микро UX</li>
+          <ul class="list services-menu">
+            <li class="services-item">
+              <h3 class="services-item-title">Дизайн портала</h3>
+              <button type="button" class="services-item-button">
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use class="icon-services-item-button-svg" href="./img/sprite.svg#icon-chevron-down" ></use>
+                </svg>
+              </button>
+              <div class="services-action">
+                <div class="services-item">
+                  <h3 class="services-item-title-action">Дизайн портала</h3>
+                  <button type="button" class="services-item-button">
+                    <svg class="" width="30" height="30">
+                      <use class="" href="./img/sprite.svg#icon-chevron-up" ></use>
+                    </svg>
+                  </button>
+                </div>
+                <p class="text-action">Дизайн портала — это оформление контента, совокупность всех
+                   графических элементов на веб-странице. Основная задача дизайна — познакомить пользователя со страницей. 
+                   Продуманный дизайн создает нужное впечатление о компании.
+                </p>
+              </div>
+            </li>
+            <li class="services-item">
+              <h3 class="services-item-title">Дизайн адаптивной мобильной версии</h3>
+            <button type="button" class="services-item-button">
+                              <svg class="services-item-button-svg" width="30" height="30">
+                  <use class="icon-services-item-button-svg" href="./img/sprite.svg#icon-chevron-down" ></use>
+                </svg>
+            </button>
+          </li>
+            <li class="services-item">
+              <h3 class="services-item-title">Дизайн десктопной версии</h3>
+              <button type="button" class="services-item-button">
+                                <svg class="services-item-button-svg" width="30" height="30">
+                  <use class="icon-services-item-button-svg" href="./img/sprite.svg#icon-chevron-down" ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="services-item">
+              <h3 class="services-item-title">Пользовательский интерфейс</h3>
+              <button type="button" class="services-item-button">
+                                <svg class="services-item-button-svg" width="30" height="30">
+                  <use class="icon-services-item-button-svg" href="./img/sprite.svg#icon-chevron-down" ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="services-item">
+              <h3 class="services-item-title">Микро UX</h3>
+              <button type="button" class="services-item-button">
+                                <svg class="services-item-button-svg" width="30" height="30">
+                  <use class="icon-services-item-button-svg" href="./img/sprite.svg#icon-chevron-down" ></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
       </section>
 
       <!---------------------------- этапы (stages) разработки интернет магазина --------------------------------------------->
-      <section class="section">
-        <div class="container">
+      <section  class="section">
+        <div id="stages" class="container">
           <h2 class="stages-section-title">Этапы разработки интернет-магазина</h2>
           <ul class="list stages">
             <li class="stages-item">
@@ -160,7 +209,7 @@
 
       <!------------------------------ примеры (examples) онлайн магазинов ----------------------------------------------->
       <section class="section">
-        <div class="container">
+        <div id="examples" class="container">
           <h2 class="examples-section-title">Примеры онлайн-магазинов</h2>
           <ul class="list examples">
             <li class="examples-items">
@@ -256,6 +305,8 @@
     </main>
 
     <div class="wrapper"></div>
-    <script src="./js/script.js"></script>
+    <script src="./js/mob-btn.js"></script>
+    <!-- <script src="./js/mob-menu.js"> </script> -->
+    <!-- <script src="./js/service-action.js"></script> -->
   </body>
 </html>
