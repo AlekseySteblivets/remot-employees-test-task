@@ -1,18 +1,13 @@
 (() => {
-  const mobMenuNav = document.querySelector('.mobile-menu-nav');
-  console.log(mobMenuNav);
-  //   const mobileMenuRef = document.querySelector('[data-menu]');
+  const menuElements = document.querySelectorAll('.mobile-menu-link');
+  menuElements.forEach(x => {
+    x.addEventListener('click', e => {
+      console.log('aaaaaa');
+      console.log(e);
 
-  mobMenuNav.addEventListener('click', e => {
-    console.log(33);
-    console.log(e);
+      const currentLink = document.querySelector('.mobile-menu-link-underline');
+      currentLink.classList.remove('mobile-menu-link-underline');
+      e.target.classList.add('mobile-menu-link-underline');
+    });
   });
-  //   menuBtnRef.addEventListener('click', () => {
-  //     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-  //     menuBtnRef.classList.toggle('is-open');
-  //     menuBtnRef.setAttribute('aria-expanded', !expanded);
-
-  //     mobileMenuRef.classList.toggle('is-open');
-  //   });
 })();

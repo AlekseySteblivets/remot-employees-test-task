@@ -1,0 +1,113 @@
+.bg-section {
+  background-color: $bg-section-color;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  margin: 0 auto;
+  width: 375px;
+}
+.spoiler-button {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding-right: 23px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 57px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 175%;
+  /* or 30px */
+
+  color: $main-text-color;
+}
+
+.spoiler-button::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $green-color;
+  left: 24px;
+  top: 22px;
+}
+
+.services-item-button-svg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spoiler-text {
+  display: none;
+}
+
+.active-service-description {
+  display: block;
+  background-color: $white-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.764;
+  /* or 30px */
+
+  color: $main-text-color;
+  padding-left: 57px;
+  padding-right: 41px;
+  padding-bottom: 46px;
+}
+
+.active-service-description::before {
+  content: '';
+  position: absolute;
+  border: 1px solid $main-text-color;
+  width: 100%;
+  transform: rotate(90deg);
+  top: 236px;
+  left: -136px;
+}
+
+.spoiler-items {
+  position: relative;
+  outline: 1px solid tomato;
+  background-color: $white-color;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.764;
+  /* identical to box height, or 30px */
+
+  color: $main-text-color;
+  border-radius: 10px;
+}
+
+.spoiler-items:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.services-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 36.6px;
+  /* or 34px */
+  text-align: center;
+  color: $main-text-color;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.services-menu {
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+
+.spoilers {
+  padding-bottom: 30px;
+}

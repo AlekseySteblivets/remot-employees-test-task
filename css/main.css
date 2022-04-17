@@ -205,54 +205,32 @@ img {
   width: 375px;
 }
 
-.services-section-title {
-  font-weight: 800;
-  font-size: 23px;
-  line-height: 36.6px;
-  /* or 34px */
-  text-align: center;
-  color: #111111;
-  margin: 0;
-  padding-top: 16px;
-}
-
-.services-item-title {
+.spoiler-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding-right: 23px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 57px;
+  border-radius: 10px;
+  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 175%;
   /* or 30px */
   color: #111111;
-  padding-top: 14px;
-  padding-bottom: 17px;
-  padding-left: 57px;
-  margin: 0;
 }
 
-.services-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.services-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.services-menu {
-  padding-top: 17px;
-  padding-bottom: 30px;
-}
-
-.services-item-title::before {
+.spoiler-button::before {
   content: '';
   position: absolute;
   width: 15px;
@@ -263,87 +241,76 @@ img {
   top: 22px;
 }
 
-.services-item-button {
-  margin-left: auto;
-  margin-right: 23px;
-  padding: 0;
-  border: none;
-  background-color: #ffffff;
-}
-
-.services-item-button:hover {
-  border: 2px solid #67aefc;
-  cursor: pointer;
-}
-
-.services-action {
-  position: absolute;
-  width: 335px;
-  background-color: #ffffff;
-  z-index: 99;
-  top: -114px;
-  border-radius: 10px;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.services-action-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.services-item-title-action::before {
+.services-item-button-svg::after {
   content: '';
   position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #67aefc;
-  left: 24px;
-  top: 33px;
+  top: 0;
+  left: 0;
 }
 
-.services-item-title-action {
-  font-weight: 800;
-  font-size: 17px;
-  line-height: 27px;
-  color: #111111;
-  padding-top: 28px;
-  padding-bottom: 19px;
-  padding-left: 57px;
-  margin: 0;
+.spoiler-text {
+  display: none;
 }
 
-.text-action {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #111111;
-  padding-top: 0;
-  padding-bottom: 46px;
-  padding-left: 57px;
-  padding-right: 41px;
+.active-service-description {
+  display: block;
+  background-color: #ffffff;
+  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
   /* or 30px */
+  color: #111111;
+  padding-left: 57px;
+  padding-right: 41px;
+  padding-bottom: 46px;
 }
 
-.text-action::before {
+.active-service-description::before {
   content: '';
   position: absolute;
-  width: 333px;
-  height: 0px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border: 1px solid #000000;
+  border: 1px solid #111111;
+  width: 100%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  top: 238px;
-  left: -135px;
+  top: 236px;
+  left: -136px;
 }
 
-.services-action > .services-item {
+.spoiler-items {
+  position: relative;
+  outline: 1px solid tomato;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.764;
+  /* identical to box height, or 30px */
+  color: #111111;
+  border-radius: 10px;
+}
+
+.spoiler-items:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.services-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 36.6px;
+  /* or 34px */
+  text-align: center;
+  color: #111111;
   margin: 0;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.services-menu {
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+
+.spoilers {
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
