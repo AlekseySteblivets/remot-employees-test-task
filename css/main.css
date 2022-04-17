@@ -313,4 +313,83 @@ img {
 .spoilers {
   padding-bottom: 30px;
 }
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 78%;
+  z-index: 10;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  margin: 60px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("/img/svg/btn-to-left.svg") 0 0/100% no-repeat;
+  border: none;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
+  border: none;
+}
+
+.stages-item-title {
+  margin: 0;
+}
+
+.stages-item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.78;
+  /* or 30px */
+  color: #111111;
+}
+
+.stages-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.478;
+  /* or 34px */
+  text-align: center;
+  color: #111111;
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 11px;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.stages-item {
+  border: 2px solid #67aefc;
+  border-radius: 15px;
+  padding-top: 27px;
+  padding-left: 31px;
+  padding-right: 27px;
+  width: 100%;
+  margin-bottom: 130px;
+}
+
+.img-slider {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  padding-left: 23px;
+}
 /*# sourceMappingURL=main.css.map */
