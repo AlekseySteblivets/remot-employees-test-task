@@ -146,6 +146,12 @@ img {
   /* or 26px */
   text-transform: uppercase;
   color: #ffffff;
+  width: 100%;
+}
+
+.discuss-img {
+  margin: 0 auto;
+  width: 285.72px;
 }
 
 .mobile-button {
@@ -483,5 +489,51 @@ img {
 .application-button {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.discuss-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.48;
+  /* or 34px */
+  text-align: center;
+  color: #111111;
+  margin: 0;
+  padding-top: 42px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  padding-right: 31px;
+}
+
+.discuss-item-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.764;
+  /* or 30px */
+  text-align: center;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.discuss-form-input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #67aefc;
+  border-radius: 10px;
+  height: 58px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  /* identical to box height */
+  color: #939393;
+  padding-left: 16.75px;
+}
+
+.discuss-button {
+  margin-top: 5px;
+  margin-bottom: 42px;
 }
 /*# sourceMappingURL=main.css.map */
