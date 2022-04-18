@@ -39,6 +39,11 @@ img {
   color: inherit;
 }
 
+.section {
+  margin: 0 auto;
+  width: 375px;
+}
+
 .container {
   margin: 0px auto;
   padding-left: 0px;
@@ -390,7 +395,7 @@ img {
 .img-slider {
   padding-top: 55px;
   padding-bottom: 60px;
-  padding-left: 23px;
+  margin: 0 auto;
 }
 
 .examples-section-title {
@@ -444,5 +449,39 @@ img {
   right: 0;
   background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
+}
+
+.application-section-title {
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 43px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.48;
+  /* or 34px */
+  text-align: center;
+  color: #111111;
+}
+
+.application-img {
+  width: 259.87px;
+  margin: 0 auto;
+}
+
+.application-item-text {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.76;
+  color: #111111;
+}
+
+.application-button {
+  width: 100%;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

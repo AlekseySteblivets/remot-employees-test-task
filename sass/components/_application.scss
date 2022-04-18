@@ -1,0 +1,36 @@
+.application-section-title {
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 43px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.48;
+  /* or 34px */
+
+  text-align: center;
+
+  color: $main-text-color;
+}
+
+.application-img {
+  width: 259.87px;
+  margin: 0 auto;
+}
+
+.application-item-text {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.76;
+
+  color: $main-text-color;
+}
+
+.application-button {
+  width: 100%;
+  margin-bottom: 50px;
+}
