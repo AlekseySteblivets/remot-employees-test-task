@@ -152,6 +152,7 @@ img {
 .discuss-img {
   margin: 0 auto;
   width: 285.72px;
+  padding-bottom: 25px;
 }
 
 .mobile-button {
@@ -535,5 +536,112 @@ img {
 .discuss-button {
   margin-top: 5px;
   margin-bottom: 42px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 375px;
+  background-color: #67aefc;
+}
+
+.footer-logo {
+  margin: 0 auto;
+  width: 280px;
+  height: 66px;
+}
+
+.footer-social {
+  padding-top: 46px;
+}
+
+.footer-contacts-menu {
+  position: relative;
+  text-align: start;
+  padding-left: 80px;
+  padding-top: 26px;
+  text-transform: capitalize;
+}
+
+.footer-contacts-items::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../img/svg/viber-hr-cont.svg");
+  width: 28px;
+  height: 29.4px;
+  left: 36px;
+}
+
+.footer-contacts-items:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-contacts-items {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  /* or 22px */
+  color: #ffffff;
+}
+
+.footer-social-icons-svg-fb {
+  width: 15.7px;
+  height: 30.7px;
+}
+
+.footer-social-icons-svg-tg {
+  width: 32.96px;
+  height: 27px;
+}
+
+.footer-social-icons-svg-viber {
+  width: 32.84px;
+  height: 34px;
+}
+
+.footer-social-icons-svg-insta {
+  width: 27.82px;
+  height: 28px;
+}
+
+.footer-social-icons-svg-whatsapp {
+  width: 31.85px;
+  height: 32px;
+}
+
+.footer-social-icons-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 241.1px;
+  margin-top: 58px;
+}
+
+.footer-link-on-site {
+  line-height: 1.375;
+  /* or 22px */
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-site-adress {
+  text-align: center;
+  margin-top: 40.58px;
+}
+
+.footer-footnote-text {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 23px;
+  padding-bottom: 152px;
 }
 /*# sourceMappingURL=main.css.map */
