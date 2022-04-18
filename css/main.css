@@ -392,4 +392,57 @@ img {
   padding-bottom: 60px;
   padding-left: 23px;
 }
+
+.examples-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.48;
+  /* or 34px */
+  text-align: center;
+  color: #111111;
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 12px;
+  padding-top: 23px;
+  padding-bottom: 14px;
+}
+
+.part-examples-section-title {
+  display: block;
+}
+
+.examples-img {
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.examples {
+  padding-bottom: 115px;
+}
+
+.slider-examples {
+  position: relative;
+}
+
+.slider-examples .slick-arrow {
+  position: absolute;
+  top: 83%;
+  z-index: 10;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  margin: 60px;
+}
+
+.slider-examples .slick-arrow.slick-prev {
+  left: 0;
+  background: url("/img/svg/btn-to-left.svg") 0 0/100% no-repeat;
+  border: none;
+}
+
+.slider-examples .slick-arrow.slick-next {
+  right: 0;
+  background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
+  border: none;
+}
 /*# sourceMappingURL=main.css.map */

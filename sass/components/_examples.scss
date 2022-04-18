@@ -1,0 +1,32 @@
+.examples-section-title {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.48;
+  /* or 34px */
+
+  text-align: center;
+
+  color: $main-text-color;
+
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 12px;
+  padding-top: 23px;
+  padding-bottom: 14px;
+}
+.part-examples-section-title {
+  display: block;
+}
+
+.examples-img {
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+// .examples-img:not(:last-child) {
+//   margin-bottom: 5px;
+// }
+
+.examples {
+  padding-bottom: 115px;
+}
