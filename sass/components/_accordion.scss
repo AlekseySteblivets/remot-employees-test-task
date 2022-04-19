@@ -160,6 +160,16 @@
   }
 }
 
+.services-section-title::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../img/svg/bag-desktop.svg');
+  width: 133px;
+  height: 148px;
+  right: 183px;
+  bottom: -223px;
+}
+
 .services-menu {
   padding-top: 17px;
   padding-bottom: 30px;
