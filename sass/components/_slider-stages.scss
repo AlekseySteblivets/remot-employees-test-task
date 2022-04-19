@@ -20,18 +20,27 @@
   width: 60px;
   height: 60px;
   margin: 60px;
+  cursor: pointer;
 }
 
 .slider .slick-arrow.slick-prev {
   left: 0;
   background: url('/img/svg/btn-to-left.svg') 0 0 / 100% no-repeat;
   border: none;
+  &:hover {
+    background: url('/img/svg/btn-to-right-hover.svg');
+    transform: rotate(180deg);
+  }
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
   background: url('/img/svg/btn-to-right.svg') 0 0 / 100% no-repeat;
   border: none;
+
+  &:hover {
+    background: url('/img/svg/btn-to-right-hover.svg');
+  }
 }
 
 .stages-item-title {

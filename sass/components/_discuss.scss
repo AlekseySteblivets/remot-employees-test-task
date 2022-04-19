@@ -42,6 +42,9 @@
   padding-left: 16.75px;
 }
 
+.discuss-form-input:hover {
+  border: 2px solid $accent;
+}
 // .discuss-form-input:not(:last-child) {
 //   margin-bottom: 10px;
 // }
@@ -49,4 +52,10 @@
 .discuss-button {
   margin-top: 5px;
   margin-bottom: 42px;
+}
+
+.discuss-img {
+  margin: 0 auto;
+  width: 285.72px;
+  padding-bottom: 25px;
 }

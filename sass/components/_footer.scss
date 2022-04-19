@@ -47,6 +47,7 @@
 .footer-social-icons-svg-fb {
   width: 15.7px;
   height: 30.7px;
+
   //   fill: #afb1b8;
   //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -84,6 +85,10 @@
   /* or 22px */
   color: $white-color;
   text-align: center;
+  // &:hover {
+  //   color: aqua;
+  //   transform: scale(1.2);
+  // }
 }
 
 .footer-site-adress {
@@ -99,4 +104,22 @@
   color: $white-color;
   padding-top: 23px;
   padding-bottom: 152px;
+}
+
+.footer-social-icons-border {
+  &:hover .footer-social-icons-svg-fb {
+    transform: scale(1.2);
+  }
+  &:hover .footer-social-icons-svg-tg {
+    transform: scale(1.2);
+  }
+  &:hover .footer-social-icons-svg-viber {
+    transform: scale(1.2);
+  }
+  &:hover .footer-social-icons-svg-insta {
+    transform: scale(1.2);
+  }
+  &:hover .footer-social-icons-svg-whatsapp {
+    transform: scale(1.2);
+  }
 }

@@ -1,7 +1,7 @@
 .button {
   padding-top: 17px;
   padding-bottom: 17px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: $green-color;
   border: none;
   text-align: center;
@@ -11,13 +11,12 @@
   /* or 26px */
 
   text-transform: uppercase;
-
+  cursor: pointer;
   color: $white-color;
   width: 100%;
 }
 
-.discuss-img {
-  margin: 0 auto;
-  width: 285.72px;
-  padding-bottom: 25px;
+.button:hover {
+  border: 2px solid $accent;
+  border-radius: 5px;
 }

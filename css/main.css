@@ -136,7 +136,7 @@ img {
 .button {
   padding-top: 17px;
   padding-bottom: 17px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #75e169;
   border: none;
   text-align: center;
@@ -145,14 +145,14 @@ img {
   line-height: 26px;
   /* or 26px */
   text-transform: uppercase;
+  cursor: pointer;
   color: #ffffff;
   width: 100%;
 }
 
-.discuss-img {
-  margin: 0 auto;
-  width: 285.72px;
-  padding-bottom: 25px;
+.button:hover {
+  border: 2px solid #67aefc;
+  border-radius: 5px;
 }
 
 .mobile-button {
@@ -348,6 +348,7 @@ img {
   width: 60px;
   height: 60px;
   margin: 60px;
+  cursor: pointer;
 }
 
 .slider .slick-arrow.slick-prev {
@@ -356,10 +357,20 @@ img {
   border: none;
 }
 
+.slider .slick-arrow.slick-prev:hover {
+  background: url("/img/svg/btn-to-right-hover.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .slider .slick-arrow.slick-next {
   right: 0;
   background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
+}
+
+.slider .slick-arrow.slick-next:hover {
+  background: url("/img/svg/btn-to-right-hover.svg");
 }
 
 .stages-item-title {
@@ -452,10 +463,20 @@ img {
   border: none;
 }
 
+.slider-examples .slick-arrow.slick-prev:hover {
+  background: url("/img/svg/btn-to-right-hover.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .slider-examples .slick-arrow.slick-next {
   right: 0;
   background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
+}
+
+.slider-examples .slick-arrow.slick-next:hover {
+  background: url("/img/svg/btn-to-right-hover.svg");
 }
 
 .application-section-title {
@@ -533,9 +554,19 @@ img {
   padding-left: 16.75px;
 }
 
+.discuss-form-input:hover {
+  border: 2px solid #67aefc;
+}
+
 .discuss-button {
   margin-top: 5px;
   margin-bottom: 42px;
+}
+
+.discuss-img {
+  margin: 0 auto;
+  width: 285.72px;
+  padding-bottom: 25px;
 }
 
 .footer {
@@ -643,5 +674,30 @@ img {
   color: #ffffff;
   padding-top: 23px;
   padding-bottom: 152px;
+}
+
+.footer-social-icons-border:hover .footer-social-icons-svg-fb {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-social-icons-border:hover .footer-social-icons-svg-tg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-social-icons-border:hover .footer-social-icons-svg-viber {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-social-icons-border:hover .footer-social-icons-svg-insta {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-social-icons-border:hover .footer-social-icons-svg-whatsapp {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */
