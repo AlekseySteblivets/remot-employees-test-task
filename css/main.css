@@ -40,8 +40,21 @@ img {
 }
 
 .section {
+  outline: 1px solid tomato;
   margin: 0 auto;
   width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 1068px;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .section {
+    width: 1920px;
+  }
 }
 
 .container {
@@ -201,6 +214,7 @@ img {
   background-image: url("../../img/png/hero-mob.png");
   background-repeat: no-repeat;
   background-position: top;
+  width: 375px;
 }
 
 @media screen and (min-width: 768px) {
@@ -414,6 +428,18 @@ img {
   width: 375px;
 }
 
+@media screen and (min-width: 768px) {
+  .bg-section {
+    width: 1068px;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .bg-section {
+    width: 1920px;
+  }
+}
+
 .spoiler-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +465,13 @@ img {
   color: #111111;
 }
 
+@media screen and (min-width: 1169px) {
+  .spoiler-button {
+    padding-top: 14px;
+    padding-left: 96px;
+  }
+}
+
 .spoiler-button::before {
   content: '';
   position: absolute;
@@ -448,6 +481,17 @@ img {
   background-color: #75e169;
   left: 24px;
   top: 22px;
+}
+
+@media screen and (min-width: 1169px) {
+  .spoiler-button::before {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 44px;
+    top: 22px;
+  }
 }
 
 .services-item-button-svg::after {
@@ -473,6 +517,35 @@ img {
   padding-left: 57px;
   padding-right: 41px;
   padding-bottom: 46px;
+}
+
+@media screen and (min-width: 1169px) {
+  .active-service-description {
+    padding-left: 96px;
+    padding-right: 69px;
+    padding-bottom: 59px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+.active-service-description::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #67aefc;
+  left: 24px;
+  top: 22px;
+}
+
+@media screen and (min-width: 1169px) {
+  .active-service-description::after {
+    left: 44px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .active-service-description::before {
@@ -506,12 +579,30 @@ img {
   font-weight: 800;
   font-size: 23px;
   line-height: 36.6px;
-  /* or 34px */
   text-align: center;
   color: #111111;
   margin: 0;
   padding-top: 16px;
   padding-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .services-section-title {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.24;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .services-section-title {
+    padding-top: 112px;
+    padding-bottom: 74px;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+  }
 }
 
 .services-menu {
@@ -521,6 +612,18 @@ img {
 
 .spoilers {
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .spoilers {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .spoilers {
+    padding-bottom: 120px;
+  }
 }
 
 .slick-track {

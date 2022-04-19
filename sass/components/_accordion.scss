@@ -4,6 +4,12 @@
   //   margin-right: auto;
   margin: 0 auto;
   width: 375px;
+  @media screen and (min-width: 768px) {
+    width: 1068px;
+  }
+  @media screen and (min-width: 1169px) {
+    width: 1920px;
+  }
 }
 .spoiler-button {
   display: flex;
@@ -25,6 +31,14 @@
   /* or 30px */
 
   color: $main-text-color;
+
+  @media screen and (min-width: 1169px) {
+    padding-top: 14px;
+    padding-left: 96px;
+    // font-weight: 700;
+    // font-size: 21px;
+    // line-height: 1.24;
+  }
 }
 
 .spoiler-button::before {
@@ -36,6 +50,14 @@
   background-color: $green-color;
   left: 24px;
   top: 22px;
+  @media screen and (min-width: 1169px) {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 44px;
+    top: 22px;
+  }
 }
 
 .services-item-button-svg::after {
@@ -62,8 +84,31 @@
   padding-left: 57px;
   padding-right: 41px;
   padding-bottom: 46px;
+
+  @media screen and (min-width: 1169px) {
+    padding-left: 96px;
+    padding-right: 69px;
+    padding-bottom: 59px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
 }
 
+.active-service-description::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $accent;
+  left: 24px;
+  top: 22px;
+  @media screen and (min-width: 1169px) {
+    left: 44px;
+    width: 24px;
+    height: 24px;
+  }
+}
 .active-service-description::before {
   content: '';
   position: absolute;
@@ -95,12 +140,24 @@
   font-weight: 800;
   font-size: 23px;
   line-height: 36.6px;
-  /* or 34px */
   text-align: center;
   color: $main-text-color;
   margin: 0;
   padding-top: 16px;
   padding-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.24;
+  }
+  @media screen and (min-width: 1169px) {
+    padding-top: 112px;
+    padding-bottom: 74px;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+  }
 }
 
 .services-menu {
@@ -110,4 +167,10 @@
 
 .spoilers {
   padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1169px) {
+    padding-bottom: 120px;
+  }
 }
