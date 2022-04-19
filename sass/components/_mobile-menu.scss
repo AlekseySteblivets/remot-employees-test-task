@@ -62,26 +62,31 @@
 // }
 
 .mobile-button {
-  display: contents;
+  display: inherit;
   width: 49px;
   cursor: pointer;
+  background-color: $accent;
+  border: none;
+  padding-right: 0px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .mobile-menu {
-  // background-color: $header-footer-color;
   background: rgba(103, 174, 252, 0.95);
-  //   padding-top: 6px;
-  //   padding-bottom: 6px;
   position: absolute;
   left: 0;
   right: 0;
-  //   height: 300px;
   width: 376px;
   margin: 0 auto;
   border-top: 1px solid #ececec;
   opacity: 0;
   visibility: hidden;
   z-index: 55;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
@@ -122,4 +127,8 @@
 
   text-transform: uppercase;
   color: $white-color;
+}
+
+.menu-mobile-svg:not(:last-child) {
+  margin-right: 5px;
 }

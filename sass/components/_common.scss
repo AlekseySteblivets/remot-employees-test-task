@@ -48,26 +48,25 @@ img {
 .section {
   margin: 0 auto;
   width: 375px;
+  // overflow-x: auto;
 }
 
 .container {
   margin: 0px auto;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin: 0;
+
   padding-left: 0px;
   padding-right: 0px;
-  width: 336px;
+  width: $mobile;
   outline: 1px solid tomato;
   // height: 100%;
 
-  // @media screen and (min-width: 335px) {
-  //   width: 335px;
+  // @media screen and (min-width: 336px) {
+  //   width: 336px;
   // }
-  // @media screen and (min-width: 680px) {
-  //   width: 680px;
-  // }
-  // @media screen and (min-width: 1170px) {
-  //   width: 1170px;
-  // }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

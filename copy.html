@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper/scss/bundle"/> -->
+    <title>RemotEmployees</title>
+  </head>
+<!-- ===================================================header=========================================== -->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="" class="link logo">
+            <img src="./img/logo.svg" alt="логотип" width="136" />
+            <!-- <svg class="logo-svg" width="242px" , height="59px">
+              <use href="./img/logo.svg"></use> -->
+            <!-- <use href="./images/mobile/sprite.svg#icon-menu-burger"></use> -->
+            <!-- </svg> -->
+          </a>
+          <ul class="list menu">
+            <li class="menu-item">
+              <a href="" class="link menu-link">Услуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="link menu-link">Портфолио</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="link menu-link">Этапы</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="link menu-link">Дизайнеры</a>
+            </li>
+          </ul>
+          <button data-menu-button class="mobile-button" type="button">
+            <svg class="menu-mobile-svg" width="13" height="13">
+              <use class="icon-menu1" href="./img/sprite.svg#icon-circle-white"></use>
+            </svg>
+            <svg class="menu-mobile-svg" width="13" height="13">
+              <use class="icon-menu1" href="./img/sprite.svg#icon-circle-white"></use>
+            </svg>
+            <svg class="menu-mobile-svg" width="13" height="13">
+              <use class="icon-menu1" href="./img/sprite.svg#icon-circle-white"></use>
+            </svg>
+          </button>
+          <!-- <button  class="button nav-btn" type="button">Заказать</button> -->
+        </nav>
+      </div>
+    </header>
+    <main>
+    <!-- ==============================Меню для мобильного mobile-menu========================================= -->
+      <!-- <div class="menu-icon">
+        <span></span>
+      </div> -->
+      <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu-nav">
+          <li class="mobile-menu-item">
+            <a href="#hero" class="link mobile-menu-link mobile-menu-link-underline">Услуги</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#services" class="link mobile-menu-link">Портфолио</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#stages" class="link mobile-menu-link">Этапы</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#examples" class="link mobile-menu-link">Дизайнеры</a>
+          </li>
+        </ul>
+      </div>
+
+ <!-- герой (hero) -->
+      <section id="hero" class="section hero">
+        <div class="container">
+          <h1 class="hero-container-title">Разработка интернет-магазина с нуля за неделю</h1>
+          <p class="hero-container-text">
+            Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного
+            стиляs до пользовательского интерфейса в сжатые сроки с командой Virtual Designers
+          </p>
+          <button class="button" type="button">Заказать</button>
+        </div>
+      </section>
+<!-- Услуги (services) дизайна по созданию интернет магазина -->
+      <section class="section bg-section">
+        <div id="services" class="container">
+          <h2 class="services-section-title">
+            Что входит в услугу по созданию дизайна интернет-магазина?
+          </h2>
+          <ul class="list spoilers">
+            <li class="spoiler-items">
+              <button type="button" class="spoiler-button">
+                Дизайн портала
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use
+                    class="icon-services-item-button-svg"
+                    href="./img/sprite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </button>
+              <div class="spoiler-text">
+                Дизайн портала — это оформление контента, совокупность всех графических элементов на
+                веб-странице. Основная задача дизайна — познакомить пользователя со страницей.
+                Продуманный дизайн создает нужное впечатление о компании.
+              </div>
+            </li>
+            <li class="spoiler-items">
+              <button type="button" class="spoiler-button">
+                Дизайн адаптивной мобильной версии
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use
+                    class="icon-services-item-button-svg"
+                    href="./img/sprite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </button>
+              <div class="spoiler-text">
+                Мобильная версия сайта удобна для пользователя, потому что сильно упрощена по
+                сравнению с обычной версией. Мобильная версия позволяет совершать заказ/покупку  с
+                минимумом действий. При адаптивной версии вся структура сайта автоматически
+                подстраивается под различную ширину экрана.
+              </div>
+            </li>
+            <li class="spoiler-items">
+              <button type="button" class="spoiler-button">
+                Дизайн десктопной версии
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use
+                    class="icon-services-item-button-svg"
+                    href="./img/sprite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </button>
+              <div class="spoiler-text">
+                Десктопную версию сайта просматривают пользователи со стационарных компьютеров.
+                Основная цель: посерфить, углубиться в детали, получить больше информации, сравнить,
+                выбрать, прицениться.
+              </div>
+            </li>
+            <li class="spoiler-items">
+              <button type="button" class="spoiler-button">
+                Пользовательский интерфейс
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use
+                    class="icon-services-item-button-svg"
+                    href="./img/sprite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </button>
+              <div class="spoiler-text">
+                Цель дизайна пользовательского интерфейса - сделать взаимодействие максимально
+                простым и эффективным, насколько это возможно, с точки зрения достижения целей
+                пользователя.
+              </div>
+            </li>
+            <li class="spoiler-items">
+              <button type="button" class="spoiler-button">
+                Микро UX
+                <svg class="services-item-button-svg" width="30" height="30">
+                  <use
+                    class="icon-services-item-button-svg"
+                    href="./img/sprite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </button>
+              <div class="spoiler-text">
+                Микро-анимация может изменить восприятие продукта, пользовательское поведение и
+                повысить конверсию. Небольшие, преимущественно функциональные анимации поддерживают
+                пользователя: обеспечивают визуальную обратную связь и более понятно отражают
+                происходящие изменения.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<!-- этапы (stages) разработки интернет магазина -->
+      <section class="section">
+        <div id="stages" class="container">
+          <h2 class="stages-section-title">Этапы разработки интернет-магазина</h2>
+
+          <ul class="list stages slider">
+            <li class="stages-item">
+              <h3 class="stages-item-title">1. Анализ</h3>
+              <p class="stages-item-text">
+                Для того, чтобы онлайн-магазин приносил выгоду, перед его запуском необходимо
+                провести анализ других предложений рынка, оценить конкурентов и найти наиболее
+                удобное решение.
+              </p>
+              <img class="img-slider" src="./img/png/slider1.png" alt="слайдер" />
+              <!-- <svg class="slaider-analis" width="220" height="231">
+                <use href="/img/png/slider1.png"></use>
+              </svg> -->
+            </li>
+            <li class="stages-item">
+              <h3 class="stages-item-title">2. Визуальное решение</h3>
+              <p class="stages-item-text">
+                Разработка дизайна ключевых страниц магазина – главная, каталог, информационные
+                разделы, раздел корзины, товаров. Для нас главное – передать настроение бренда,
+                сделать удобный сайт.
+              </p>
+              <img class="img-slider" src="./img/png/slider2.png" alt="слайдер" />
+            </li>
+            <li class="stages-item">
+              <h3 class="stages-item-title">3. Техническая реализация</h3>
+              <p class="stages-item-text">
+                После утверждения дизайн-макета наступает следующий этап – верстка. Это трудоемкий
+                процесс: программисты должны все тщательно прописать, чтобы не допустить технических
+                ошибок.
+              </p>
+              <img class="img-slider" src="./img/png/slider3.png" alt="слайдер" />
+            </li>
+            <li class="stages-item">
+              <h3 class="stages-item-title">4. Наполнение контентом</h3>
+              <p class="stages-item-text">
+                Создание и публикация текстов, а также видео материала. Хороший контент и
+                качественные фотографии привлекают больше посетителей и помогают клиенту лучше
+                ознакомиться с ассортиментом.
+              </p>
+              <img class="img-slider" src="./img/png/slider4.png" alt="слайдер" />
+            </li>
+            <li class="stages-item">
+              <h3 class="stages-item-title">5. Тестирование</h3>
+              <p class="stages-item-text">
+                Составление плана тестирования для определения ошибок. Проверка работы сайта и
+                визуального восприятия для улучшения сайта. Также используются чек-листы для четкого
+                определения ошибок и их устранения..
+              </p>
+              <img class="img-slider" src="./img/png/slider5.png" alt="слайдер" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<!-- примеры (examples) онлайн магазинов -->
+      <section class="section bg-section">
+        <div id="examples" class="container">
+          <h2 class="examples-section-title">
+            <span class="part-examples-section-title">Примеры</span> <span>онлайн-магазинов</span>
+          </h2>
+          <ul class="list examples slider-examples">
+            <li class="examples-items">
+              <picture>
+                <img
+                  src="./img/jpg/wholesale-baying.jpg"
+                  alt="оптовые покупки"
+                  class="examples-img"
+                />
+              </picture>
+            </li>
+            <li class="examples-items">
+              <picture>
+                <img src="./img/jpg/for-florists.jpg" alt="для флористов" class="examples-img" />
+              </picture>
+            </li>
+            <li class="examples-items">
+              <picture>
+                <img src="./img/jpg/for-salon.jpg" alt="для парикмахерских" class="examples-img" />
+              </picture>
+            </li>
+            <li class="examples-items">
+              <picture>
+                <img src="./img/jpg/for-makeup.jpg" alt="для визажистов" class="examples-img" />
+              </picture>
+            </li>
+            <li class="examples-items">
+              <picture>
+                <img
+                  src="./img/jpg/for-confectioner.jpg"
+                  alt="для кондитеров"
+                  class="examples-img"
+                />
+              </picture>
+            </li>
+            <li class="examples-items">
+              <picture>
+                <img src="./img/jpg/for-artists.jpg" alt="для ходожников" class="examples-img" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<!-- оставить заявку (application) -->
+      <section class="section">
+        <div class="container">
+          <h2 class="application-section-title">Необходимо больше информации?</h2>
+          <img
+            class="application-img"
+            src="./img/png/need-more-inf-mob.png"
+            alt="картинка блокнота"
+          />
+          <p class="application-item-text">
+            Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной коммерции
+            и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб
+            дизайнеру. За выгодную цену и короткий период времени, он поможет визуализировать ваш
+            веб проект.
+          </p>
+          <button class="button application-button" type="submit">Оставить заявку</button>
+        </div>
+      </section>
+
+<!-- обсудить проект (discuss) -->
+      <section class="section bg-section">
+        <div class="container">
+          <h2 class="discuss-section-title">Обсудить проект</h2>
+          <p class="discuss-item-text">
+            Расскажите о своих бизнес-целях и мы поможем вам в их достижении
+          </p>
+          <form>
+            <label class="discuss-form-label">
+              <input
+                type="text"
+                name="text"
+                placeholder="Имя"
+                class="discuss-form-input"
+                required
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Username must be two words separated by space."
+              />
+            </label>
+            <label class="discuss-form-label">
+              <input
+                type="tel"
+                name="tel"
+                placeholder="Telegram/Viber"
+                class="discuss-form-input"
+                required
+                pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{11,15}$"
+                title="Введите в формате +380... или 380..."
+              />
+            </label>
+            <label class="discuss-form-label">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="discuss-form-input"
+                required
+              />
+            </label>
+            <button type="submit" class="button discuss-button">Отправить</button>
+          </form>
+          <img
+            class="discuss-img"
+            src="./img/png/discuss-project-mob.png"
+            alt="картинка телефона"
+          />
+        </div>
+      </section>
+
+  <!-- подвал страницы (footer) -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-social">
+            <a href="./index.html" class="link footer-logo">
+              <img class="footer-logo" src="./img/logo.svg" alt="логотип" width="280" />
+            </a>
+            <div class="footer-contacts">
+              <ul class="list footer-contacts-menu">
+                <li class="footer-contacts-items">валерия: +79805585949</li>
+                <li class="footer-contacts-items">анна: +79805585949</li>
+                <li class="footer-contacts-items">валерия: +79805585949</li>
+              </ul>
+            </div>
+            <div class="">
+              <ul class="list footer-social-icons-menu">
+                <li class="footer-social-icons-items">
+                  <a class="link footer-social-icons-border" href="https://www.facebook.com/">
+                    <svg class="footer-social-icons-svg-fb">
+                      <use href="./img/sprite.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-icons-items">
+                  <a class="link footer-social-icons-border" href="https://web.telegram.org">
+                    <svg class="footer-social-icons-svg-tg">
+                      <use href="./img/sprite.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-icons-items">
+                  <a class="link footer-social-icons-border" href="https://www.viber.com">
+                    <svg class="footer-social-icons-svg-viber">
+                      <use href="./img/sprite.svg#icon-viber"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-icons-items">
+                  <a class="link footer-social-icons-border" href="https://www.instagram.com">
+                    <svg class="footer-social-icons-svg-insta">
+                      <use href="./img/sprite.svg#icon-ins-footer-desktop"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-icons-items">
+                  <a class="link footer-social-icons-border" href="https://www.whatsapp.com">
+                    <svg class="footer-social-icons-svg-whatsapp">
+                      <use href="./img/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-site-adress">
+            <a href="mailto:hr@dv-s.com" class="footer-link-on-site">hr@dv-s.com</a>
+          </div>
+          <div class="footer-footnote">
+            <p class="footer-footnote-text">Developers 2018-2021 © All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="wrapper"></div>
+    <script src="./js/mob-btn.js"></script>
+    <script src="./js/mob-menu.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
