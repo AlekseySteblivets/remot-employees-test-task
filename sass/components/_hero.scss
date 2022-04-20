@@ -6,18 +6,18 @@
   background-repeat: no-repeat;
   background-position: top;
   //   text-align: center;
-  width: 375px;
+  width: 100%;
   //   height: 547px;
   @media screen and (min-width: 768px) {
-    width: 1068px;
+    // width: 1068px;
     background-image: url('../../img/png/hero-desk-top-main-part.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    background-size: center;
+    background-position: center;
     height: 600px;
   }
   @media screen and (min-width: 1169px) {
-    width: 1920px;
+    max-width: 1920px;
     background-image: url('../../img/png/hero-desk-top-main-part.png');
     background-repeat: no-repeat;
     background-position: center;

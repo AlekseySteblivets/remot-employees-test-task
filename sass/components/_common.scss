@@ -48,13 +48,13 @@ img {
 .section {
   outline: 1px solid tomato;
   margin: 0 auto;
-  width: 375px;
+  width: 100%;
   // overflow-x: auto;
-  @media screen and (min-width: 768px) {
-    width: 1068px;
+  @media screen and (max-width: 768px) {
+    width: 375px;
   }
   @media screen and (min-width: 1169px) {
-    width: 1920px;
+    max-width: 1920px;
   }
 }
 
