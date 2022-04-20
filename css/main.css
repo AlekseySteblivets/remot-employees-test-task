@@ -1173,8 +1173,14 @@ img {
 
 .footer {
   margin: 0 auto;
-  width: 375px;
+  width: 100%;
   background-color: #67aefc;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 375px;
+  }
 }
 
 .footer-logo {
