@@ -1,3 +1,14 @@
+.bg-application {
+  // width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  @media screen and (min-width: 1169px) {
+    background-image: url('../../img/png/bg-application-desk-top.png');
+    max-width: 1920px;
+  }
+}
+
 .application-section-title {
   margin: 0;
   padding-left: 15px;
@@ -12,11 +23,34 @@
   text-align: center;
 
   color: $main-text-color;
+  // @media screen and (min-width: 768px) {
+  //   width: 1068px;
+  // }
+  @media screen and (min-width: 1169px) {
+    font-size: 32px;
+    line-height: 1.25;
+    padding-top: 216px;
+    padding-bottom: 53px;
+    text-align: start;
+  }
 }
 
 .application-img {
   width: 259.87px;
   margin: 0 auto;
+  @media screen and (min-width: 1169px) {
+    display: none;
+  }
+}
+.application-img-desktop {
+  display: none;
+  @media screen and (min-width: 1169px) {
+    display: block;
+    position: absolute;
+    width: 690px;
+    right: -211px;
+    top: 135px;
+  }
 }
 
 .application-item-text {
@@ -28,9 +62,34 @@
   line-height: 1.76;
 
   color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1169px) {
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: start;
+    width: 670px;
+    padding-bottom: 45px;
+  }
 }
 
 .application-button {
   width: 100%;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1168px) {
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 1169px) {
+    margin-bottom: 180px;
+    width: 270px;
+    // line-height: 1;
+  }
+}
+
+.bg-application .container {
+  position: relative;
 }
