@@ -832,6 +832,19 @@ img {
   }
 }
 
+.bg-examples {
+  background-color: #daecff;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1169px) {
+  .bg-examples {
+    background-image: url("../../img/png/bg-examples-desktop.png");
+  }
+}
+
 .examples-section-title {
   font-weight: 800;
   font-size: 23px;
@@ -846,8 +859,23 @@ img {
   padding-bottom: 14px;
 }
 
+@media screen and (min-width: 1169px) {
+  .examples-section-title {
+    font-size: 32px;
+    line-height: 1.25;
+    padding-top: 121px;
+    padding-bottom: 51px;
+  }
+}
+
 .part-examples-section-title {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .part-examples-section-title {
+    display: inline;
+  }
 }
 
 .examples-img {

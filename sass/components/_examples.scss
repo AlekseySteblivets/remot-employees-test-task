@@ -1,3 +1,12 @@
+.bg-examples {
+  background-color: $bg-section-color;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  @media screen and (min-width: 1169px) {
+    background-image: url('../../img/png/bg-examples-desktop.png');
+  }
+}
 .examples-section-title {
   font-weight: 800;
   font-size: 23px;
@@ -13,9 +22,21 @@
   padding-right: 12px;
   padding-top: 23px;
   padding-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1169px) {
+    font-size: 32px;
+    line-height: 1.25;
+    padding-top: 121px;
+    padding-bottom: 51px;
+  }
 }
 .part-examples-section-title {
   display: block;
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
 }
 
 .examples-img {
