@@ -962,6 +962,7 @@ img {
     line-height: 1.25;
     padding-top: 216px;
     padding-bottom: 53px;
+    padding-left: 0px;
     text-align: start;
   }
 }
@@ -1008,6 +1009,7 @@ img {
     text-align: start;
     width: 670px;
     padding-bottom: 45px;
+    padding-top: 0px;
   }
 }
 
@@ -1036,11 +1038,23 @@ img {
   position: relative;
 }
 
+.bg-discuss {
+  background-color: #daecff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1169px) {
+  .bg-discuss {
+    background-image: url("../../img/png/bg-discuss-desktop.png");
+  }
+}
+
 .discuss-section-title {
   font-weight: 800;
   font-size: 23px;
   line-height: 1.48;
-  /* or 34px */
   text-align: center;
   color: #111111;
   margin: 0;
@@ -1048,6 +1062,17 @@ img {
   padding-bottom: 17px;
   padding-left: 24px;
   padding-right: 31px;
+}
+
+@media screen and (min-width: 1169px) {
+  .discuss-section-title {
+    font-size: 32px;
+    line-height: 1.25;
+    padding-top: 180px;
+    padding-bottom: 34px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .discuss-item-text {
@@ -1060,6 +1085,16 @@ img {
   margin-top: 0;
   margin-bottom: 25px;
   width: 100%;
+}
+
+@media screen and (min-width: 1169px) {
+  .discuss-item-text {
+    font-size: 18px;
+    line-height: 1.78;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    width: 479px;
+  }
 }
 
 .discuss-form-input {
@@ -1077,8 +1112,31 @@ img {
   padding-left: 16.75px;
 }
 
+@media screen and (min-width: 1169px) {
+  .discuss-form-input {
+    padding-left: 14px;
+    margin-bottom: 20px;
+  }
+}
+
 .discuss-form-input:hover {
   border: 2px solid #67aefc;
+}
+
+@media screen and (min-width: 768px) {
+  .discuss-form {
+    margin: 0 auto;
+    width: 520px;
+    padding-bottom: 1px;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .discuss-form {
+    margin: 0 auto;
+    width: 470px;
+    padding-bottom: 1px;
+  }
 }
 
 .discuss-button {
@@ -1086,10 +1144,31 @@ img {
   margin-bottom: 42px;
 }
 
+@media screen and (min-width: 768px) {
+  .discuss-button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .discuss-button {
+    margin-top: 10px;
+    margin-bottom: 128px;
+  }
+}
+
 .discuss-img {
   margin: 0 auto;
   width: 285.72px;
   padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .discuss-img {
+    display: none;
+  }
 }
 
 .footer {

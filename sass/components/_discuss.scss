@@ -1,17 +1,34 @@
+.bg-discuss {
+  background-color: $bg-section-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 1169px) {
+    background-image: url('../../img/png/bg-discuss-desktop.png');
+  }
+}
+
 .discuss-section-title {
   font-weight: 800;
   font-size: 23px;
   line-height: 1.48;
-  /* or 34px */
-
   text-align: center;
-
   color: $main-text-color;
   margin: 0;
   padding-top: 42px;
   padding-bottom: 17px;
   padding-left: 24px;
   padding-right: 31px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1169px) {
+    font-size: 32px;
+    line-height: 1.25;
+    padding-top: 180px;
+    padding-bottom: 34px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .discuss-item-text {
@@ -24,6 +41,15 @@
   margin-top: 0;
   margin-bottom: 25px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1169px) {
+    font-size: 18px;
+    line-height: 1.78;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    width: 479px;
+  }
 }
 
 .discuss-form-input {
@@ -40,6 +66,10 @@
 
   color: $placeholder-text-color;
   padding-left: 16.75px;
+  @media screen and (min-width: 1169px) {
+    padding-left: 14px;
+    margin-bottom: 20px;
+  }
 }
 
 .discuss-form-input:hover {
@@ -49,13 +79,42 @@
 //   margin-bottom: 10px;
 // }
 
+.discuss-form {
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    width: 520px;
+    padding-bottom: 1px;
+  }
+  @media screen and (min-width: 1169px) {
+    margin: 0 auto;
+    width: 470px;
+    padding-bottom: 1px;
+  }
+}
+
 .discuss-button {
   margin-top: 5px;
   margin-bottom: 42px;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+    // width: 520px;
+  }
+  @media screen and (min-width: 1169px) {
+    // display: block;
+    // margin: 0 auto;
+    // width: 470px;
+    margin-top: 10px;
+    margin-bottom: 128px;
+  }
 }
 
 .discuss-img {
   margin: 0 auto;
   width: 285.72px;
   padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
