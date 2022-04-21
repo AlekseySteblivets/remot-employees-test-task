@@ -8,8 +8,6 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 26px;
-  /* or 26px */
-
   text-transform: uppercase;
   cursor: pointer;
   color: $white-color;
@@ -17,9 +15,6 @@
   @media screen and (min-width: 768px) {
     width: 270px;
   }
-  // @media screen and (min-width: 1169px) {
-  //   width: 270px;
-  // }
 }
 
 .button:hover {

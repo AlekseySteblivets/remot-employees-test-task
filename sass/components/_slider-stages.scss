@@ -1,15 +1,8 @@
 .bg-stages {
   background-repeat: no-repeat;
   background-position: top;
-  // background-image: url('../../img/png/bg-image-stages-desk-top.png');
-
-  // @media screen and (min-width: 768px) {
-  //   background-image: url('../../img/png/bg-image-stages-desk-top.png');
-  // }
   @media screen and (min-width: 1169px) {
     background-image: url('../../img/png/bg-image-stages-desk-top.png');
-
-    // padding-bottom: 120px;
   }
 }
 
@@ -23,8 +16,6 @@
 
 .slider {
   position: relative;
-  //   padding-left: 33px;
-  //   padding-right: 29px;
 }
 
 .slider .slick-arrow {
@@ -49,7 +40,7 @@
   left: 0;
   background: url('/img/svg/btn-to-left.svg') 0 0 / 100% no-repeat;
   border: none;
-  top: 700px;
+  top: 635px;
   &:hover {
     background: url('/img/svg/btn-to-right-hover.svg');
     transform: rotate(180deg);
@@ -69,7 +60,7 @@
   right: 0;
   background: url('/img/svg/btn-to-right.svg') 0 0 / 100% no-repeat;
   border: none;
-  top: 700px;
+  top: 635px;
 
   &:hover {
     background: url('/img/svg/btn-to-right-hover.svg');
@@ -91,7 +82,6 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 1.24;
-    // margin-bottom: 21px;
   }
 }
 
@@ -100,8 +90,6 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 1.78;
-  /* or 30px */
-
   color: $main-text-color;
   @media screen and (min-width: 1169px) {
     font-size: 18px;
@@ -113,22 +101,13 @@
   font-weight: 800;
   font-size: 23px;
   line-height: 1.478;
-  /* or 34px */
-
   text-align: center;
-
   color: $main-text-color;
   margin: 0;
   padding-left: 4px;
   padding-right: 11px;
   padding-top: 42px;
   padding-bottom: 20px;
-
-  // @media screen and (min-width: 768px) {
-
-  //   padding-top: 123px;
-  //   padding-bottom: 84px;
-  // }
   @media screen and (min-width: 1169px) {
     padding-top: 123px;
     padding-bottom: 82px;
@@ -139,39 +118,29 @@
 
 .stages-item {
   border: 2px solid $accent;
-  //   box-sizing: border-box;
   border-radius: 15px;
   padding-top: 27px;
   padding-left: 31px;
   padding-right: 27px;
   width: 100%;
   margin-bottom: 130px;
-  // width: calc(100% / 2 - 20px);
-  // @media screen and (min-width: 768px) {
-  //   .stages-item:not(:last-child) {
-  //     margin-right: 25px;
-  //   }
-  // }
   @media screen and (min-width: 1169px) {
     height: 389px;
     width: 672px;
     margin-right: 25px;
     padding-top: 85px;
     padding-left: 70px;
-    // padding-right: 27px;
     margin-bottom: 0px;
   }
 }
 
 .img-slider {
   padding-top: 55px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     padding: 0;
   }
-  // @media screen and (min-width: 1169px) {
-  // }
 }
 
 .stages {

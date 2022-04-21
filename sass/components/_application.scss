@@ -1,5 +1,4 @@
 .bg-application {
-  // width: 100%;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -10,6 +9,7 @@
 }
 
 .application-section-title {
+  position: relative;
   margin: 0;
   padding-left: 15px;
   padding-top: 43px;
@@ -18,14 +18,9 @@
   font-weight: 800;
   font-size: 23px;
   line-height: 1.48;
-  /* or 34px */
-
   text-align: center;
 
   color: $main-text-color;
-  // @media screen and (min-width: 768px) {
-  //   width: 1068px;
-  // }
   @media screen and (min-width: 1169px) {
     font-size: 32px;
     line-height: 1.25;
@@ -34,6 +29,17 @@
     padding-left: 0px;
     text-align: start;
   }
+}
+
+.application-section-title::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../img/png/small-ball.png');
+  width: 39px;
+  height: 39px;
+  top: -12px;
+  right: 14px;
+  background-position: center;
 }
 
 .application-img {
@@ -61,11 +67,7 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 1.76;
-
   color: $main-text-color;
-
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1169px) {
     font-size: 18px;
     line-height: 1.39;
@@ -88,7 +90,6 @@
   @media screen and (min-width: 1169px) {
     margin-bottom: 180px;
     width: 270px;
-    // line-height: 1;
   }
 }
 

@@ -1,15 +1,5 @@
 .bg-section {
   background-color: $bg-section-color;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // margin: 0 auto;
-  // width: 100%;
-  // @media screen and (max-width: 768px) {
-  //   width: 375px;
-  // }
-  // @media screen and (min-width: 1169px) {
-  //   max-width: 1920px;
-  // }
 }
 .spoiler-button {
   display: flex;
@@ -28,16 +18,10 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 175%;
-  /* or 30px */
-
   color: $main-text-color;
-
   @media screen and (min-width: 1169px) {
     padding-top: 14px;
     padding-left: 96px;
-    // font-weight: 700;
-    // font-size: 21px;
-    // line-height: 1.24;
   }
 }
 
@@ -78,8 +62,6 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* or 30px */
-
   color: $main-text-color;
   padding-left: 57px;
   padding-right: 41px;
@@ -117,18 +99,12 @@
   width: 1px;
   left: 29px;
   top: 89px;
-  // transform: rotate(90deg);
 
   @media screen and (min-width: 768px) {
     height: 54%;
-    /* -webkit-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
     top: 63px;
   }
   @media screen and (min-width: 1169px) {
-    height: 38%;
-    /* -webkit-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
     top: 73px;
     left: 56px;
   }
@@ -141,8 +117,6 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* identical to box height, or 30px */
-
   color: $main-text-color;
   border-radius: 10px;
 }
@@ -152,6 +126,7 @@
 }
 
 .services-section-title {
+  position: relative;
   font-weight: 800;
   font-size: 23px;
   line-height: 36.6px;
@@ -175,15 +150,16 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
 .services-section-title::after {
-  content: '';
-  position: absolute;
-  background-image: url('../../img/svg/bag-desktop.svg');
-  width: 133px;
-  height: 148px;
-  right: 183px;
-  bottom: -223px;
+  @media screen and (min-width: 1169px) {
+    content: '';
+    position: absolute;
+    background-image: url('../../img/svg/bag-desktop.svg');
+    width: 133px;
+    height: 148px;
+    right: -230px;
+    bottom: -371px;
+  }
 }
 
 .services-menu {

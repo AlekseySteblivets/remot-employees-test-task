@@ -1,18 +1,14 @@
 .hero {
   margin: 0 auto;
-  outline: 1px solid tomato;
-  // margin-top: 27px;
+  // outline: 1px solid tomato;
   background-image: url('../../img/png/hero-mob.png');
   background-repeat: no-repeat;
   background-position: top;
-  //   text-align: center;
   width: 100%;
-  //   height: 547px;
   @media screen and (max-width: 768px) {
     width: 375px;
   }
   @media screen and (min-width: 768px) {
-    // width: 1068px;
     background-image: url('../../img/png/hero-desk-top-main-part.png');
     background-repeat: no-repeat;
     background-size: center;
@@ -28,13 +24,8 @@
   }
 }
 
-// .hero-container-title {
-
-// }
-
 .hero .container {
   padding-top: 337px;
-  //   margin-top: 337px;
   @media screen and (min-width: 768px) {
     padding-top: 220px;
   }
@@ -47,7 +38,6 @@
   font-weight: 800;
   font-size: 27px;
   line-height: 1.2;
-  /* or 32px */
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 22px;
@@ -72,7 +62,6 @@
   margin-top: 0px;
   font-weight: 400;
   line-height: 1.37;
-  /* or 22px */
   margin-bottom: 34px;
   @media screen and (min-width: 768px) {
     margin-bottom: 42px;

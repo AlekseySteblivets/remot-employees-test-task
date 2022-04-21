@@ -35,7 +35,6 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* or 30px */
   text-align: center;
   color: $main-text-color;
   margin-top: 0;
@@ -62,8 +61,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  /* identical to box height */
-
   color: $placeholder-text-color;
   padding-left: 16.75px;
   @media screen and (min-width: 1169px) {
@@ -75,9 +72,6 @@
 .discuss-form-input:hover {
   border: 2px solid $accent;
 }
-// .discuss-form-input:not(:last-child) {
-//   margin-bottom: 10px;
-// }
 
 .discuss-form {
   @media screen and (min-width: 768px) {
@@ -99,12 +93,8 @@
     margin: 0 auto;
     display: block;
     margin-bottom: 60px;
-    // width: 520px;
   }
   @media screen and (min-width: 1169px) {
-    // display: block;
-    // margin: 0 auto;
-    // width: 470px;
     margin-top: 10px;
     margin-bottom: 128px;
   }

@@ -1,21 +1,7 @@
 .header {
-  // display: flex;
   margin: 0 auto;
   width: 100%;
-  //   position: relative;
-  // margin: 0 auto;
-
   background-color: $accent;
-
-  // @media screen and (min-width: 375px) {
-  //   width: 375px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 1068px;
-  // }
-  // @media screen and (min-width: 1169px) {
-  //   width: 1920px;
-  // }
   @media screen and (max-width: 768px) {
     width: 375px;
   }
@@ -48,7 +34,6 @@
     text-transform: uppercase;
     cursor: pointer;
     color: $white-color;
-    // width: 100%;
     margin-left: 30px;
   }
   &:hover,
@@ -93,9 +78,6 @@
   text-transform: capitalize;
   color: $white-color;
   font-size: 10px;
-  // @media screen and (min-width: $tablet) {
-  //    font-size: 16px;
-  // }
   @media screen and (min-width: $desktop) {
     font-weight: 600;
     font-size: 16px;

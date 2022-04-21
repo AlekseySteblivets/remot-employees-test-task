@@ -55,22 +55,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
-  /* or 22px */
-
   color: $white-color;
   @media screen and (min-width: 1169px) {
     font-size: 20px;
     line-height: 1.2;
-    // text-transform: uppercase;
   }
 }
 
 .footer-social-icons-svg-fb {
   width: 15.7px;
   height: 30.7px;
-
-  //   fill: #afb1b8;
-  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icons-svg-tg {
@@ -109,13 +103,8 @@
 
 .footer-link-on-site {
   line-height: 1.375;
-  /* or 22px */
   color: $white-color;
   text-align: center;
-  // &:hover {
-  //   color: aqua;
-  //   transform: scale(1.2);
-  // }
 }
 
 .footer-site-adress {

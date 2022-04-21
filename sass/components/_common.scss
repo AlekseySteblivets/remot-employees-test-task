@@ -4,9 +4,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.75;
-  //   letter-spacing: 0.872727px;
   color: $main-text-color;
-  //   min-width: 360px;
 }
 
 /* добавил этот стиль когда начал делать фест-мобайл подход*/
@@ -14,7 +12,6 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
-  // outline: 2px solid red;
 }
 
 html {
@@ -37,19 +34,12 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
-  //   transition: color $time-transition;
-
-  //   &:focus,
-  //   &:hover {
-  //     color: $accent-cl;
-  //   }
 }
 
 .section {
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
   margin: 0 auto;
   width: 100%;
-  // overflow-x: auto;
   @media screen and (max-width: 768px) {
     width: 375px;
   }
@@ -64,12 +54,8 @@ img {
   padding-left: 0px;
   padding-right: 0px;
   width: $mobile;
-  outline: 1px solid tomato;
-  // height: 100%;
+  // outline: 1px solid tomato;
 
-  // @media screen and (min-width: 336px) {
-  //   width: 336px;
-  // }
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }

@@ -40,7 +40,6 @@ img {
 }
 
 .section {
-  outline: 1px solid tomato;
   margin: 0 auto;
   width: 100%;
 }
@@ -62,7 +61,6 @@ img {
   padding-left: 0px;
   padding-right: 0px;
   width: 336px;
-  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 768px) {
@@ -209,7 +207,6 @@ img {
 
 .hero {
   margin: 0 auto;
-  outline: 1px solid tomato;
   background-image: url("../../img/png/hero-mob.png");
   background-repeat: no-repeat;
   background-position: top;
@@ -262,7 +259,6 @@ img {
   font-weight: 800;
   font-size: 27px;
   line-height: 1.2;
-  /* or 32px */
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 22px;
@@ -293,7 +289,6 @@ img {
   margin-top: 0px;
   font-weight: 400;
   line-height: 1.37;
-  /* or 22px */
   margin-bottom: 34px;
 }
 
@@ -339,7 +334,6 @@ img {
   font-weight: 700;
   font-size: 15px;
   line-height: 26px;
-  /* or 26px */
   text-transform: uppercase;
   cursor: pointer;
   color: #ffffff;
@@ -423,7 +417,6 @@ img {
   font-weight: 800;
   font-size: 17px;
   line-height: 27px;
-  /* identical to box height, or 159% */
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -457,7 +450,6 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 175%;
-  /* or 30px */
   color: #111111;
 }
 
@@ -508,7 +500,6 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* or 30px */
   color: #111111;
   padding-left: 57px;
   padding-right: 41px;
@@ -557,17 +548,12 @@ img {
 @media screen and (min-width: 768px) {
   .active-service-description::before {
     height: 54%;
-    /* -webkit-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
     top: 63px;
   }
 }
 
 @media screen and (min-width: 1169px) {
   .active-service-description::before {
-    height: 38%;
-    /* -webkit-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
     top: 73px;
     left: 56px;
   }
@@ -580,7 +566,6 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* identical to box height, or 30px */
   color: #111111;
   border-radius: 10px;
 }
@@ -590,6 +575,7 @@ img {
 }
 
 .services-section-title {
+  position: relative;
   font-weight: 800;
   font-size: 23px;
   line-height: 36.6px;
@@ -619,14 +605,16 @@ img {
   }
 }
 
-.services-section-title::after {
-  content: '';
-  position: absolute;
-  background-image: url("../../img/svg/bag-desktop.svg");
-  width: 133px;
-  height: 148px;
-  right: 183px;
-  bottom: -223px;
+@media screen and (min-width: 1169px) {
+  .services-section-title::after {
+    content: '';
+    position: absolute;
+    background-image: url("../../img/svg/bag-desktop.svg");
+    width: 133px;
+    height: 148px;
+    right: -230px;
+    bottom: -371px;
+  }
 }
 
 .services-menu {
@@ -703,7 +691,7 @@ img {
   left: 0;
   background: url("/img/svg/btn-to-left.svg") 0 0/100% no-repeat;
   border: none;
-  top: 700px;
+  top: 635px;
 }
 
 .slider .slick-arrow.slick-prev:hover {
@@ -730,7 +718,7 @@ img {
   right: 0;
   background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
-  top: 700px;
+  top: 635px;
 }
 
 .slider .slick-arrow.slick-next:hover {
@@ -768,7 +756,6 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.78;
-  /* or 30px */
   color: #111111;
 }
 
@@ -783,7 +770,6 @@ img {
   font-weight: 800;
   font-size: 23px;
   line-height: 1.478;
-  /* or 34px */
   text-align: center;
   color: #111111;
   margin: 0;
@@ -825,7 +811,6 @@ img {
 
 .img-slider {
   padding-top: 55px;
-  padding-bottom: 60px;
   margin: 0 auto;
 }
 
@@ -872,7 +857,6 @@ img {
   font-weight: 800;
   font-size: 23px;
   line-height: 1.48;
-  /* or 34px */
   text-align: center;
   color: #111111;
   margin: 0;
@@ -1006,7 +990,7 @@ img {
     font-weight: 700;
     font-size: 21px;
     line-height: 1.24;
-    text-transform: capitalize;
+    text-transform: none;
   }
 }
 
@@ -1038,6 +1022,7 @@ img {
 }
 
 .application-section-title {
+  position: relative;
   margin: 0;
   padding-left: 15px;
   padding-top: 43px;
@@ -1046,7 +1031,6 @@ img {
   font-weight: 800;
   font-size: 23px;
   line-height: 1.48;
-  /* or 34px */
   text-align: center;
   color: #111111;
 }
@@ -1060,6 +1044,17 @@ img {
     padding-left: 0px;
     text-align: start;
   }
+}
+
+.application-section-title::after {
+  content: '';
+  position: absolute;
+  background-image: url("../../img/png/small-ball.png");
+  width: 39px;
+  height: 39px;
+  top: -12px;
+  right: 14px;
+  background-position: center;
 }
 
 .application-img {
@@ -1174,7 +1169,6 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.764;
-  /* or 30px */
   text-align: center;
   color: #111111;
   margin-top: 0;
@@ -1202,7 +1196,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  /* identical to box height */
   color: #939393;
   padding-left: 16.75px;
 }
@@ -1335,7 +1328,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
-  /* or 22px */
   color: #ffffff;
 }
 
@@ -1397,7 +1389,6 @@ img {
 
 .footer-link-on-site {
   line-height: 1.375;
-  /* or 22px */
   color: #ffffff;
   text-align: center;
 }
