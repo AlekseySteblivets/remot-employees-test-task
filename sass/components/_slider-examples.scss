@@ -36,14 +36,8 @@
 
 .examples-items {
   position: relative;
-  // overflow: hidden;
-
-  // cursor: pointer;
-
   &:hover .examples-action {
-    // overflow: visible;
     display: flex;
-    // transform: translateY(0px);
   }
 }
 
@@ -53,7 +47,6 @@
   justify-content: center;
   border-radius: 15px;
 
-  // margin: 0 auto;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,10 +55,6 @@
   left: 0;
   margin: 0;
   color: $white-color;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  // transform: translateY(+100%);
   transition: $time-transition;
   text-align: center;
 
@@ -79,14 +68,26 @@
 }
 
 .examples-action-title {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.24;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.59;
+  text-transform: uppercase;
+  color: $white-color;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.24;
+    text-transform: capitalize;
+  }
 }
 .examples-action-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.78;
   margin: 0;
+  @media screen and (min-width: 1169px) {
+    font-size: 17px;
+    line-height: 1.764;
+  }
 }
