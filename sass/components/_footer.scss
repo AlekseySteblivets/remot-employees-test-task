@@ -23,6 +23,12 @@
   padding-left: 80px;
   padding-top: 26px;
   text-transform: capitalize;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-left: 232px;
+  }
+  @media screen and (min-width: 1169px) {
+    padding-left: 36px;
+  }
 }
 
 .footer-contacts-items::before {
@@ -32,6 +38,13 @@
   width: 28px;
   height: 29.4px;
   left: 36px;
+  @media screen and (min-width: 1169px) {
+    left: 0px;
+    width: 21.56px;
+    height: 22.5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .footer-contacts-items:not(:last-child) {
@@ -45,6 +58,11 @@
   /* or 22px */
 
   color: $white-color;
+  @media screen and (min-width: 1169px) {
+    font-size: 20px;
+    line-height: 1.2;
+    // text-transform: uppercase;
+  }
 }
 
 .footer-social-icons-svg-fb {
@@ -81,6 +99,12 @@
   align-items: center;
   width: 241.1px;
   margin-top: 58px;
+  @media screen and (min-width: 1169px) {
+    margin: 0;
+    width: 270px;
+    height: 25px;
+    padding-top: 45px;
+  }
 }
 
 .footer-link-on-site {
@@ -97,6 +121,13 @@
 .footer-site-adress {
   text-align: center;
   margin-top: 40.58px;
+  text-transform: lowercase;
+  @media screen and (min-width: 1169px) {
+    padding-left: 120px;
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .footer-footnote-text {
@@ -107,6 +138,15 @@
   color: $white-color;
   padding-top: 23px;
   padding-bottom: 152px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 1169px) {
+    padding-top: 134px;
+    padding-bottom: 79px;
+    font-size: 18px;
+    line-height: 1.78;
+  }
 }
 
 .footer-social-icons-border {
@@ -124,5 +164,11 @@
   }
   &:hover .footer-social-icons-svg-whatsapp {
     transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .foter-mobile {
+    display: none;
   }
 }

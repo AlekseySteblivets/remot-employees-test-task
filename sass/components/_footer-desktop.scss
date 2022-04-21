@@ -1,0 +1,12 @@
+.footer-desktop {
+  display: none;
+  @media screen and (min-width: 1169px) {
+    display: flex;
+    justify-content: start;
+    padding-top: 101px;
+  }
+}
+
+.logo-and-social {
+  padding-right: 130px;
+}
