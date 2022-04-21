@@ -83,6 +83,12 @@ img {
   background-color: #67aefc;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    width: 375px;
+  }
+}
+
 .menu {
   display: none;
 }
@@ -121,6 +127,11 @@ img {
     color: #ffffff;
     margin-left: 30px;
   }
+}
+
+.nav-btn:hover, .nav-btn:focus {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -203,6 +214,12 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
