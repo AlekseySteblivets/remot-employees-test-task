@@ -40,7 +40,7 @@
     height: 24px;
     border-radius: 50%;
     left: 44px;
-    top: 22px;
+    top: 18px;
   }
 }
 
@@ -52,7 +52,8 @@
 }
 
 .spoiler-text {
-  display: none;
+  height: 0px;
+  opacity: 0;
 }
 
 .active-service-description {
@@ -63,14 +64,17 @@
   font-size: 17px;
   line-height: 1.764;
   color: $main-text-color;
-  padding-left: 57px;
+  padding-left: 30px;
   padding-right: 41px;
   padding-bottom: 46px;
+  opacity: 1;
+  height: 100%;
 
   @media screen and (min-width: 1169px) {
-    padding-left: 96px;
+    padding-left: 54px;
     padding-right: 69px;
     padding-bottom: 59px;
+    padding-top: 20px;
     font-size: 18px;
     line-height: 1.8;
   }
@@ -89,30 +93,31 @@
     left: 44px;
     width: 24px;
     height: 24px;
+    top: 18px;
   }
 }
-.active-service-description::before {
-  content: '';
-  position: absolute;
-  border: 1px solid $main-text-color;
-  height: 69%;
-  width: 1px;
-  left: 29px;
-  top: 89px;
+// .active-service-description::before {
+//   content: '';
+//   position: absolute;
+//   border: 1px solid $main-text-color;
+//   height: 69%;
+//   width: 1px;
+//   left: 29px;
+//   top: 89px;
 
-  @media screen and (min-width: 768px) {
-    height: 54%;
-    top: 63px;
-  }
-  @media screen and (min-width: 1169px) {
-    top: 73px;
-    left: 56px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     height: 54%;
+//     top: 63px;
+//   }
+//   @media screen and (min-width: 1169px) {
+//     top: 73px;
+//     left: 56px;
+//   }
+// }
 
 .spoiler-items {
   position: relative;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
   background-color: $white-color;
   font-weight: 400;
   font-size: 17px;
@@ -174,5 +179,22 @@
   }
   @media screen and (min-width: 1169px) {
     padding-bottom: 120px;
+  }
+}
+
+.services-item-button-svg {
+  transform: rotate(0deg);
+}
+
+.active-svg {
+  transform: rotate(180deg);
+}
+
+.spoiler-text-border-left {
+  margin: 0;
+  border-left: 1px solid;
+  padding-left: 25px;
+  @media screen and (min-width: 1169px) {
+    padding-left: 40px;
   }
 }

@@ -472,7 +472,7 @@ img {
     height: 24px;
     border-radius: 50%;
     left: 44px;
-    top: 22px;
+    top: 18px;
   }
 }
 
@@ -484,7 +484,8 @@ img {
 }
 
 .spoiler-text {
-  display: none;
+  height: 0px;
+  opacity: 0;
 }
 
 .active-service-description {
@@ -495,16 +496,19 @@ img {
   font-size: 17px;
   line-height: 1.764;
   color: #111111;
-  padding-left: 57px;
+  padding-left: 30px;
   padding-right: 41px;
   padding-bottom: 46px;
+  opacity: 1;
+  height: 100%;
 }
 
 @media screen and (min-width: 1169px) {
   .active-service-description {
-    padding-left: 96px;
+    padding-left: 54px;
     padding-right: 69px;
     padding-bottom: 59px;
+    padding-top: 20px;
     font-size: 18px;
     line-height: 1.8;
   }
@@ -526,36 +530,12 @@ img {
     left: 44px;
     width: 24px;
     height: 24px;
-  }
-}
-
-.active-service-description::before {
-  content: '';
-  position: absolute;
-  border: 1px solid #111111;
-  height: 69%;
-  width: 1px;
-  left: 29px;
-  top: 89px;
-}
-
-@media screen and (min-width: 768px) {
-  .active-service-description::before {
-    height: 54%;
-    top: 63px;
-  }
-}
-
-@media screen and (min-width: 1169px) {
-  .active-service-description::before {
-    top: 73px;
-    left: 56px;
+    top: 18px;
   }
 }
 
 .spoiler-items {
   position: relative;
-  outline: 1px solid tomato;
   background-color: #ffffff;
   font-weight: 400;
   font-size: 17px;
@@ -629,6 +609,28 @@ img {
 @media screen and (min-width: 1169px) {
   .spoilers {
     padding-bottom: 120px;
+  }
+}
+
+.services-item-button-svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.active-svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.spoiler-text-border-left {
+  margin: 0;
+  border-left: 1px solid;
+  padding-left: 25px;
+}
+
+@media screen and (min-width: 1169px) {
+  .spoiler-text-border-left {
+    padding-left: 40px;
   }
 }
 
