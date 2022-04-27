@@ -583,7 +583,7 @@ img {
   .services-section-title::after {
     content: '';
     position: absolute;
-    background-image: url("../../img/svg/bag-desktop.svg");
+    background-image: url("../img/svg/bag-desktop.svg");
     width: 133px;
     height: 148px;
     right: -230px;
