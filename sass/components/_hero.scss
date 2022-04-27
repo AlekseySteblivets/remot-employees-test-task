@@ -1,7 +1,7 @@
 .hero {
   margin: 0 auto;
   // outline: 1px solid tomato;
-  background-image: url('../../img/png/hero-mob.png');
+  background-image: url('../img/png/hero-mob.png');
   background-repeat: no-repeat;
   background-position: top;
   width: 100%;
@@ -9,17 +9,14 @@
     width: 375px;
   }
   @media screen and (min-width: 768px) {
-    background-image: url('../../img/png/hero-desk-top-main-part.png');
-    background-repeat: no-repeat;
+    background-image: url('../img/png/hero-desk-top-main-part.png');
     background-size: center;
     background-position: center;
     height: 600px;
   }
   @media screen and (min-width: 1169px) {
     max-width: 1920px;
-    background-image: url('../../img/png/hero-desk-top-main-part.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../img/png/hero-desk-top-main-part.png');
     height: 766px;
   }
 }

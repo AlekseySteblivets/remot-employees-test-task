@@ -207,7 +207,7 @@ img {
 
 .hero {
   margin: 0 auto;
-  background-image: url("../../img/png/hero-mob.png");
+  background-image: url("../img/png/hero-mob.png");
   background-repeat: no-repeat;
   background-position: top;
   width: 100%;
@@ -221,8 +221,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../../img/png/hero-desk-top-main-part.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/png/hero-desk-top-main-part.png");
     background-size: center;
     background-position: center;
     height: 600px;
@@ -232,9 +231,7 @@ img {
 @media screen and (min-width: 1169px) {
   .hero {
     max-width: 1920px;
-    background-image: url("../../img/png/hero-desk-top-main-part.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../img/png/hero-desk-top-main-part.png");
     height: 766px;
   }
 }
@@ -689,13 +686,13 @@ img {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("/img/svg/btn-to-left.svg") 0 0/100% no-repeat;
+  background: url("../img/svg/btn-to-left.svg") 0 0/100% no-repeat;
   border: none;
   top: 635px;
 }
 
 .slider .slick-arrow.slick-prev:hover {
-  background: url("/img/svg/btn-to-right-hover.svg");
+  background: url("../img/svg/btn-to-right-hover.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -716,13 +713,13 @@ img {
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
+  background: url("../img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
   top: 635px;
 }
 
 .slider .slick-arrow.slick-next:hover {
-  background: url("/img/svg/btn-to-right-hover.svg");
+  background: url("../img/svg/btn-to-right-hover.svg");
 }
 
 @media screen and (min-width: 768px) {
@@ -910,24 +907,24 @@ img {
 
 .slider-examples .slick-arrow.slick-prev {
   left: 0;
-  background: url("/img/svg/btn-to-left.svg") 0 0/100% no-repeat;
+  background: url("../img/svg/btn-to-left.svg") 0 0/100% no-repeat;
   border: none;
 }
 
 .slider-examples .slick-arrow.slick-prev:hover {
-  background: url("/img/svg/btn-to-right-hover.svg");
+  background: url("../img/svg/btn-to-right-hover.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 .slider-examples .slick-arrow.slick-next {
   right: 0;
-  background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
+  background: url("../img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
 }
 
 .slider-examples .slick-arrow.slick-next:hover {
-  background: url("/img/svg/btn-to-right-hover.svg");
+  background: url("../img/svg/btn-to-right-hover.svg");
 }
 
 .examples-items {

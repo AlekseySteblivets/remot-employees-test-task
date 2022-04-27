@@ -14,21 +14,21 @@
 
 .slider-examples .slick-arrow.slick-prev {
   left: 0;
-  background: url('/img/svg/btn-to-left.svg') 0 0 / 100% no-repeat;
+  background: url('../img/svg/btn-to-left.svg') 0 0 / 100% no-repeat;
   border: none;
   &:hover {
-    background: url('/img/svg/btn-to-right-hover.svg');
+    background: url('../img/svg/btn-to-right-hover.svg');
     transform: rotate(180deg);
   }
 }
 
 .slider-examples .slick-arrow.slick-next {
   right: 0;
-  background: url('/img/svg/btn-to-right.svg') 0 0 / 100% no-repeat;
+  background: url('../img/svg/btn-to-right.svg') 0 0 / 100% no-repeat;
   border: none;
 
   &:hover {
-    background: url('/img/svg/btn-to-right-hover.svg');
+    background: url('../img/svg/btn-to-right-hover.svg');
   }
 }
 
