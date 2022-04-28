@@ -1,0 +1,21 @@
+// @mixin bordered($color) {
+//   border-top: 1px solid $color;
+//   border-bottom: 1px solid $color;
+// }
+
+// .section {
+//   @include bordered(tomato);
+//   padding: 20px;
+// }
+
+@mixin media-tablet($tablet) {
+  @media screen and (min-width: $tablet) {
+  }
+}
+
+@mixin media-desktop($desktop) {
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+@include media-tablet;

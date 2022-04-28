@@ -685,15 +685,20 @@ img {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/svg/btn-to-left.svg") 0 0/100% no-repeat;
-  border: none;
+  background: url("../img/svg/chevron-down.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 2px solid #67aefc;
+  border-radius: 15px;
   top: 635px;
+  fill: green;
 }
 
 .slider .slick-arrow.slick-prev:hover {
-  background: url("../img/svg/btn-to-right-hover.svg");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  fill: green;
 }
 
 @media screen and (min-width: 768px) {
@@ -712,13 +717,13 @@ img {
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/svg/btn-to-right.svg") 0 0/100% no-repeat;
+  background: url("/img/svg/btn-to-right.svg") 0 0/100% no-repeat;
   border: none;
   top: 635px;
 }
 
 .slider .slick-arrow.slick-next:hover {
-  background: url("../img/svg/btn-to-right-hover.svg");
+  background: url("/img/svg/btn-to-right-hover.svg");
 }
 
 @media screen and (min-width: 768px) {

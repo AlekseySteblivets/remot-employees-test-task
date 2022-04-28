@@ -2,21 +2,27 @@
   margin: 0 auto;
   width: 100%;
   background-color: $accent;
-  @media screen and (max-width: 768px) {
+  @include media-tablet {
     width: 375px;
   }
+  // @media screen and (max-width: 768px) {
+  //   width: 375px;
+  // }
 }
 
 .menu {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include media-tablet {
     display: flex;
   }
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
 }
 
 .nav-btn {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include media-tablet {
     display: inline-block;
     align-items: center;
 
@@ -37,6 +43,27 @@
     margin-left: 30px;
     transition: 0.5s;
   }
+  // @media screen and (min-width: 768px) {
+  //   display: inline-block;
+  //   align-items: center;
+
+  //   padding-top: 10px;
+  //   padding-bottom: 10px;
+  //   padding-right: 42px;
+  //   padding-left: 42px;
+  //   border-radius: 5px;
+  //   background-color: $green-color;
+  //   border: 2px solid transparent;
+  //   text-align: center;
+  //   font-weight: 700;
+  //   font-size: 15px;
+  //   line-height: 1;
+  //   text-transform: uppercase;
+  //   cursor: pointer;
+  //   color: $white-color;
+  //   margin-left: 30px;
+  //   transition: 0.5s;
+  // }
   &:hover,
   &:focus {
     border: 2px solid $white-color;
@@ -53,42 +80,66 @@
 .header-logo {
   margin-top: 9px;
   margin-bottom: 5px;
-  @media screen and (min-width: $tablet) {
+  @include media-tablet {
     width: 180px;
     margin-bottom: 16px;
     margin-top: 16px;
   }
-  @media screen and (min-width: $desktop) {
+  @mixin media-desktop {
     width: 242px;
     margin-bottom: 18px;
     margin-top: 18px;
   }
+  // @media screen and (min-width: $tablet) {
+  //   width: 180px;
+  //   margin-bottom: 16px;
+  //   margin-top: 16px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   width: 242px;
+  //   margin-bottom: 18px;
+  //   margin-top: 18px;
+  // }
 }
 
 .logo {
   margin-right: auto;
-  @media screen and (min-width: $tablet) {
+  @include media-tablet {
     margin-right: 139px;
   }
-  @media screen and (min-width: $desktop) {
+  // @media screen and (min-width: $tablet) {
+  //   margin-right: 139px;
+  // }
+  @mixin media-desktop {
     margin-right: 307px;
   }
+  // @media screen and (min-width: $desktop) {
+  //   margin-right: 307px;
+  // }
 }
 
 .menu-item {
   text-transform: capitalize;
   color: $white-color;
   font-size: 10px;
-  @media screen and (min-width: $desktop) {
+  @mixin media-desktop {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
   }
+  // @media screen and (min-width: $desktop) {
+  //   font-weight: 600;
+  //   font-size: 16px;
+  //   line-height: 1.25;
+  // }
 }
 
 .menu-item:not(:last-child) {
   margin-right: 20px;
-  @media screen and (min-width: $desktop) {
+  @mixin media-desktop {
     margin-right: 37px;
   }
+  // @media screen and (min-width: $desktop) {
+  //   margin-right: 37px;
+  // }
 }
